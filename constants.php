@@ -1,4 +1,5 @@
 <?php
+	require 'private.php';
 	$PERIOD_S = (60*4); // seconds
 	$MAX_REPLAY_TIME_SPAN = (2*24*60*60); // two days
 	$MAX_REPLAY_TIME = (5*60); // 5 min
