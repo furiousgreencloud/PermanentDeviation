@@ -1,0 +1,117 @@
+/* Page */
+
+
+#wrapper {
+	font-family: Helvetica, Arial, sans-serif;
+	width: 99%;
+	height: 99%;
+	position: absolute;
+	top: 59px;
+}
+
+p {
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+h3 {
+	font-size: 18px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+#header {
+	background-color: #c5b021;
+	position: absolute;
+	left: -1px;
+	top: -1px;
+	width: 100%;
+	height: 59px;
+}
+
+.logo {
+	font-family: Montserrat, Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	position: absolute;
+	top: 3px;
+	right: 5px;
+	color: #ffe183;
+}
+
+.labels {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #F06;
+	font-weight: lighter;
+	text-transform: uppercase;
+}
+.labelresults {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 17px;
+	text-transform: uppercase;
+	color: #333;
+}
+
+a:link {
+	color: #ffe183;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #ffe183;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #ffe183;
+	text-decoration: none;
+}
+
+
+/* Code box */
+
+textarea#code {
+	width: 58%;
+	height: 400px;
+	position: absolute;
+	float: left;
+}
+
+/* Canvas box */
+
+.canwrapper {
+	position: absolute;
+	right: 1px;
+}
+
+canvas {
+	border: 1px solid #999;
+	width: 400px;
+	height: 400px;
+	float: right;
+}
+
+.disabled {
+	background-color : #dddddd;
+	color : black;
+}
+
+.normal {
+	background-color : white;
+	color : black;
+}
+
+
+textarea {
+	font-family: monospace;
+	font-size: 10pt;
+}
+
+/* Errors box */
+
+textarea#output {
+	width: 100%;
+	height: 110px;
+	border: 1px solid #999;
+	position: relative;
+	top: 415px;
+}

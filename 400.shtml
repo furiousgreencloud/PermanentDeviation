@@ -1,0 +1,21 @@
+<html>
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Error Page</title></head>
+<body>
+<p align="center"><b><i><font size="7">400 Error Bad Request</font></i></b></p><div align="center"><center>
+<div align="center">><BR>
+<table borderColor="#ffffff" cellSpacing="0" cellPadding="1" width="500" borderColorLight="#000000" border="1"><tr>
+<td align="middle" bgColor="#cccccc"><font style="FONT-SIZE: 12px" face="Arial" size="2">
+<b>Error 400: BAD REQUEST</b></font></td></tr>
+<tr>
+<td align="middle" bgColor="#ffffff">
+<p align="center"><font style="FONT-SIZE: 12px" face="Arial" size="2">
+<br>The requested URL, <!--#echo var="REQUEST_URI" --> resulted in a bad request. Please verify your input</font></p>
+<br><br>
+</td></tr>
+</table>
+<p>&nbsp;</p>
+</body>
+</html>
