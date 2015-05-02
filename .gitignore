@@ -10,6 +10,7 @@ private.*
 *.class
 .DS_Store
 .project
+transmit_sync_offset*
 autom4te.cache/
 libtool
 m4/
