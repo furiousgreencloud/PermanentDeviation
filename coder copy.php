@@ -3,13 +3,6 @@
 	//unset($_COOKIE['pcii']); // Used for DEBUGGING, somtimes
 
 
-
-$fp = fopen("sandbox/state.json","r");
-if ($fp) {
-	flock($fp,LOCK_EX);
-}
-
-
 	// TODO use fine read/write access as lock on giving out keys
 	// database
 	function areFinal() {
@@ -84,40 +77,27 @@ if ($fp) {
 	<script type="text/javascript" src="diff.js"></script>
 	<script type="text/javascript" src="common.js"></script>
 	<script type="text/javascript" src="scoreing.js"></script>
-     <script>
-$(function() {
-$( document ).tooltip();
-});
-</script>
 </head>
 <body onload='document.getElementById("code").focus();'>
 	
 	<!--<span>server state: <?php var_dump($state); ?><span><br><br>-->
     <div id="header"><img src="images/header_bar.jpg" width="1024" height="59" alt="header graphic"><p class="logo"><a href="index.php" title="home">permanent deviation</a></p></div>
 <div id="wrapper"> 	
-<p class="labels"><span>Username: <input type="text" id="name" name="name" title="Add an Alias" onBlur="nameSet()"></span><br>
-	<span>Score: </span><span id="score" class="labelresults"></span> <img src="images/button_grey_info.png" width="14" height="18" alt="tips" title="Comments = 2 points (help teach others). Number = 1 point. Keyword = 2 points. Processing language = 1 point. Removing code = 0 points."> <br>
+<p class="labels"><span>Username: <input type="text" id="name" name="name" onBlur="nameSet()"></span><br>
+	<span>Score: </span><span id="score" class="labelresults"></span><br>
 	<span>You are: </span><span id="state" class="labelresults"></span><br>
 	<span>Time: </span><span id="time" class="labelresults">...</span></p>
-			 <p id="snapParent">   
-				<button id="play"   onclick="play();"><img src="images/button_grey_play.png" width="28" height="14" alt="Play"></button>
-				<button id="stop"   onclick="stop();"><img src="images/button_grey_stop.png" width="28" height="14" alt="Stop"></button>
-             	<button id="submit" onClick="submit();">Submit</button>
-                <button id="reload" onClick="location.reload();">Try to Code</button>
+             <p>   <button id="play"   onclick="play();">Play</button>
+				<button id="stop"   onclick="stop();">Stop</button>
+             <button id="submit" onClick="submit();">Submit</button>
+                <button id="reload" onClick="location.reload();">Try Code</button>
 				<button id="reset"  onclick="resetCode();">Start Fresh</button>
 				<button id="replay">Replay Lastest Coding</button>
-				<button id="snapshot" onclick="snapshot();">Create Snapshot</button>
-<script>
-function snapshot() {
-	document.getElementById("snapParent").appendChild(createDownloadLink("sketch", "snapshot.png"))
-}
-</script>
-			</p>
-             <textarea id='code' class='unselectable' readyonly="readonly" onselectstart='return false;' onpaste='return false;' ondragstart='return false;'></textarea>
+				</p>
+                <textarea id='code' class='unselectable' readyonly="readonly" onselectstart='return false;' onpaste='return false;' ondragstart='return false;'></textarea>
 			
-					<div id='sketch-container' class="canwrapper"><canvas id='sketch' class='editor'></canvas> </div> 
-					
-<textarea class="disabled" id="output" readonly>None.</textarea><p> <a href="http://permanentdeviation.com/reference.html" target="_blank"><img src="images/reference.png" width="204" height="25" alt="link to reference"></a></p></div>
+					<div id='sketch-container' class="canwrapper"><canvas id='sketch'></canvas></div>
+    			<textarea class="disabled" id="output" readonly>None.</textarea> </div>
 			
 			<a style="display:none" id="sessionLink"  href="replay.php?startTime=<?php echo $state['startTime'];?>&endTime=<?php echo $state['endTime'];?>">session replay link</a>
 		
@@ -133,18 +113,6 @@ function snapshot() {
 		var commentsAndWhiteSpace = new RegExp('/s+|(//.*$)','gm');
 		var g_previousCode="";
 		var g_previousTestCode="";
-
-		document.addEventListener("keydown", function(e) {
-			if (e.keyCode == 13 && e.metaKey) {
-				toggleFullScreen();
-			}
-		}, false);
-
-		document.addEventListener("keydown", function(e) {
-			if (e.keyCode == 69 && e.metaKey) { // Meta-E
-				exportPNG();
-			}
-		}, false);
 
 		function resetOk() {
 			return (state['score'] >= SCORE_NEEDED && state['mode'] == 'live');
@@ -446,7 +414,6 @@ function snapshot() {
 			$('button').button();
 			$('button').button("option", "disabled", true );
 			$('#play').button("option", "disabled", false );
-			$('#snapshot').button("option", "disabled", false );
 			$('#name').prop('disabled',false);
 
 			$('#replay').click( function() {

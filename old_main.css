@@ -1,0 +1,28 @@
+canvas {
+	border: 1px solid; width: 400px; height: 400px
+}
+
+.disabled {
+	background-color : #dddddd;
+	color : black;
+}
+
+.normal {
+	background-color : white;
+	color : black;
+}
+
+textarea {
+	font-family: monospace;
+	font-size: 10pt;
+}
+
+textarea#code {
+	width: 390;
+	height: 400px;
+}
+textarea#output {
+	width: 800px;
+	height: 100px;
+}
+

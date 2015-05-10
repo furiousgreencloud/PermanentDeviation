@@ -69,10 +69,13 @@ require 'constants.php';
 			return;
 		}
 	} else {
+		/*
 		echo "Get/Post is bad JSON\n";
-		echo "GET:..\n";
+		echo "GET That Produced Bad JSON is:...\n";
 		var_dump($_GET);
 		echo "POST/INPUT:...\n";
 		var_dump(file_get_contents("php://input"));
+		 */
+		returnLatest();
 	}
 ?>

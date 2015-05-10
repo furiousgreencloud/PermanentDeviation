@@ -4,43 +4,19 @@
 #wrapper {
 	font-family: Helvetica, Arial, sans-serif;
 	width: 99%;
+	height: 99%;
 	position: absolute;
 	top: 59px;
-}
-
-html.fullscreen {
-	background-color: grey;
-	background-size: cover;
 }
 
 #homewrapper {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 22px;
 	position: absolute;
-	top: 100px;
-	left: 13%;
-	right: 50%;
-	width: 1000px;
-	text-align: center;
-}
-
-#refwrapper {
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 18px;
-	position: absolute;
-	top: 80px;
-	left: 20px;
+	top: 270px;
+	left: 580px;
 	text-align: left;
-	width: 90%;
-}
-
-#refheader {
-	background-color: #c5b021;
-	position: absolute;
-	left: -1px;
-	top: -1px;
-	width: 100%;
-	height: 59px;
+	width: 400px;
 }
 
 p {
@@ -62,9 +38,6 @@ h3 {
 	height: 59px;
 }
 
-#header.fullscreen {
-	display:none;
-}
 
 ul li {
 	font-family: Arial, Helvetica, sans-serif;
@@ -115,47 +88,29 @@ a:visited {
 textarea#code {
 	width: 58%;
 	height: 400px;
-	position: relative;
+	position: absolute;
 	float: left;
 }
 
 /* Canvas box */
 
-#sketch-container {
+.canwrapper {
 	position: absolute;
 	right: 1px;
 }
 
-#sketch-container.fullscreen {
-	position: relative;
-	margin-left: auto;
-	margin-right: auto;
-	width: 70%;
-}
-
 canvas {
 	border: 1px solid #999;
-}
-
-canvas.editor {
 	width: 400px;
 	height: 400px;
-	margin-right: 6px;
 	float: right;
-}
-
-canvas.fullscreen {
-	width: 800px;
-	height: 800px;
-	margin-right: auto;
-	margin-left: auto;
-	float: left;
 }
 
 .disabled {
 	background-color : #dddddd;
 	color : black;
 }
+
 .normal {
 	background-color : white;
 	color : black;
@@ -176,10 +131,24 @@ textarea {
 /* Errors box */
 
 textarea#output {
-	width: 58%;
+	width: 100%;
 	height: 110px;
 	border: 1px solid #999;
-	margin-top: 10px;
+	position: relative;
+	top: 415px;
 }
 
+
+#vivologo {
+	position: absolute;
+	left: 10px;
+	bottom: 10px;
+	
+}
+#supportlogos {
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+	
+}
 
