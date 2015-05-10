@@ -1,0 +1,6 @@
+
+DROP TABLE IF EXISTS frameTable;
+CREATE TABLE frameTable (
+  frame BLOB NOT NULL,
+  timeCode VARCHAR(255) PRIMARY KEY NOT NULL
+);
