@@ -220,7 +220,7 @@ $.getJSON('download.php', { frame: time_sec } , function(data,textStatus,jqXHR) 
 		if (data) {
 			console.log(data ); // DEBUG
 			var codeEl = document.getElementById("code");
-      // Need to update previousValue which is used by nopaste.js to detect pasting.
+			// Need to update previousValue which is used by nopaste.js to detect pasting.
 			codeEl.previousValue = codeEl.value =  unescape(data["code"]);
 			if (callback_fn != undefined) {
 				callback_fn(data);
