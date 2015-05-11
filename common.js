@@ -219,7 +219,8 @@ $.getJSON('download.php', { frame: time_sec } , function(data,textStatus,jqXHR) 
 		//console.log("download response"); // DEBUG
 		if (data) {
 			console.log(data ); // DEBUG
-			document.getElementById("code").value =  unescape(data["code"]);
+			var codeEl = document.getElementById("code");
+			codeEl.previousValue = codeEl.value =  unescape(data["code"]);
 			if (callback_fn != undefined) {
 				callback_fn(data);
 			}
