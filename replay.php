@@ -87,7 +87,7 @@
 <div id="header"><img src="images/header_bar.jpg" width="1024" height="59" alt="header graphic"><p class="logo"><a href="index.php" title="home">permanent deviation</a></p></div>
         <div id="wrapper">
 	<!--<h3>REPLAY LAST SESSION</h3>-->
-	<p class="labels"><span>Coding Happended: </span> <span id="time" class="labelresults">...</span> ago<br>
+	<p class="labels"><span>Coding Happened: </span> <span id="time" class="labelresults">...</span> ago<br>
 	<span>Coder was: <span id='name' class="labelresults">...</span><br>
 	<span>Coder's Score then: <span id='score' class="labelresults">...</span><br>
 	<!--<span>Status: </span><span id=state class="labelresults">...</span>--></p>
@@ -98,13 +98,13 @@
 			
 				<textarea id="code" class="disabled" rows="25" cols="60" readonly></textarea>
 		
-				<div id='sketch-container' class="canwrapper"><canvas id='sketch'></canvas>
+				<div id='sketch-container' class="canwrapper"><canvas id='sketch' class='editor'></canvas>
 				</div>
 			
-    			<textarea class="disabled" rows="10" cols="80" id="output" readonly>None.</textarea>
+    			<textarea class="disabled" rows="10" cols="80" id="output" readonly>None.</textarea><p><a href="http://permanentdeviation.com/reference.html" target="_blank"><img src="images/reference.png" width="204" height="25" alt="link to reference"></a></p>
                 </div>
 			
-	<script type="text/javascript" src="processing-1.4.1.min.js"></script>
+	<script type="text/javascript" src="processing/processing.min.js"></script>
 	<script type="text/javascript" src="helper/jsbeautify.js"></script> 
 	<script type="text/javascript" src="helper/processing-helper.js"></script> 
 	<script type="text/javascript" >

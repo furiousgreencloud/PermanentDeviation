@@ -35,10 +35,11 @@
 	  </span>
   <p> <button id="continue" >Yes, I'll Code!</button>
 	  <button id="watch">No, can I just watch?</button></p>
-  <p>&nbsp;</p>
-  <p>Learn more about this project, VIVO and the artists who made this <a href="http://www.vivomediaarts.com/permanent-deviation/" target="_blank"> <strong>here</strong>.</a></p>
+      <p style="font-size: 19px"><strong>PARTY STARTS HERE AT 8PM PDT</strong></p>
+  <p>Or join us at <strong><a href="http://vivomediaarts.com" target="_blank">VIVO Media Arts,1965 Main Street </a></strong> for our launch party. </p>
   <p>Hashtag: <strong>#vivopd</strong></p>
-  <p>Please send feedback or bugs to <a href="mailto:info@permanentdeviation.com"><strong>info@permanentdeviation.com</strong></a></p>
+  <p><a href="http://permanentdeviation.com/reference.html" target="_blank">Find code themes  for the night here.</a> (opens to new tab)</p>
+  <p><a href="http://www.vivomediaarts.com/permanent-deviation/" target="_blank">Learn more about VIVO and the artists who made this here.</a></p>
 </div>
       
 <div id="vivologo"><a href="http://vivomediaarts.com" target="_blank"><img src="images/vivo.png" width="133" height="95" alt="VIVO Logo"></a></div>

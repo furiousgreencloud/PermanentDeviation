@@ -8,11 +8,6 @@
 	top: 59px;
 }
 
-html.fullscreen {
-	background-color: grey;
-	background-size: cover;
-}
-
 #homewrapper {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 22px;
@@ -60,10 +55,6 @@ h3 {
 	top: -1px;
 	width: 100%;
 	height: 59px;
-}
-
-#header.fullscreen {
-	display:none;
 }
 
 ul li {
@@ -121,41 +112,31 @@ textarea#code {
 
 /* Canvas box */
 
-#sketch-container {
+.canwrapper {
 	position: absolute;
 	right: 1px;
 }
 
-#sketch-container.fullscreen {
-	position: relative;
-	margin-left: auto;
-	margin-right: auto;
-	width: 70%;
-}
-
-canvas {
+canvas.processing {
 	border: 1px solid #999;
-}
-
-canvas.editor {
 	width: 400px;
 	height: 400px;
-	margin-right: 6px;
 	float: right;
+	margin-right: 6px;
 }
 
 canvas.fullscreen {
+	border: 1px solid #999;
 	width: 800px;
+	float:left;
 	height: 800px;
-	margin-right: auto;
-	margin-left: auto;
-	float: left;
 }
 
 .disabled {
 	background-color : #dddddd;
 	color : black;
 }
+
 .normal {
 	background-color : white;
 	color : black;

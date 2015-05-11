@@ -3,7 +3,7 @@
 	$PERIOD_S = (60*4); // seconds
 	$MAX_REPLAY_TIME_SPAN = (2*24*60*60); // two days
 	$MAX_REPLAY_TIME = (5*60); // 5 min
-	//$MAX_REPLAY_TIME = 10; // 5 min	
+	//$MAX_REPLAY_TIME = 10; // 5 min
 	//
 	// REMOVE MAGIC QUOTES, ala http://php.net/manual/en/security.magicquotes.disabling.php
 	if (get_magic_quotes_gpc()) {

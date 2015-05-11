@@ -3,10 +3,7 @@
 	<style type="text/css">
 		@import url(main.css);
 		@import url(jquery-ui.css );
-	h4 {
-	font-size: 16px;
-}
-    </style>
+	</style>
 <head>
 	<meta http-equiv="content-type" content="text/html;charset=UTF-8">
 	<script type="text/javascript" src="jquery-1.10.1.js"></script>
@@ -39,7 +36,6 @@
 			if ( download_data && download_data['time'] == data['time']) {
 				// same step as last step
 				// don't runSketch
-				//console.log("same download times"); // DEBUG
 			} else  {
 				if	(data['step'] == 'test' || data['step'] == 'final') {
 					console.log("runing Sketch()"); // DEBUG
@@ -65,40 +61,41 @@
 			});
 
 		});
-		document.addEventListener("keydown", function(e) {
-			if (e.keyCode == 13 && e.metaKey) {
-				toggleFullScreen();
-			}
-		}, false);
-
 	</script>
 </head>
-
-<body>
-<div id="header"><img src="images/header_bar.jpg" width="1024" height="59" alt="header graphic"><p class="logo"><a href="index.php" title="home">permanent deviation</a></p></div>
-<div id="wrapper">
-<!--<h3>VIEWER</h3>-->
-	<p class="labels"><span>Coder is: <span id='name' class="labelresults">...</span><br>
-	<span>Coder's Score: <span id='score' class="labelresults">...</span><br>
-	<span>Status: </span><span id=state class="labelresults">...</span><br>
-	<span>Time: </span> <span id="time" class="labelresults">...</span></p>
-	
-				<p><button id="replay">Replay Latest</button>
-				<button id="tryCode">Try Code</button></p>
-		
- 	
-        
-				<textarea id="code" class="disabled" rows="25" cols="60" readonly></textarea>
-			
-				<div id='sketch-container' class="canwrapper">
-                <canvas id='sketch' class='editor' ></canvas>
+<body id='wrapper'>
+	<h3>Viewer</h3>
+	<span>Coder is: <span id='name'>...</span><br>
+	<span>Coder's Score: <span id='score'>...</span><br>
+	<span>Status: </span><span id=state>...</span><br>
+	<span>Time: </span> <span id="time">...</span><br>
+	<table>
+		<tr>
+			<td colspan=2>
+				<button id="replay">Replay Latest</button>
+				<button id="tryCode">Try Code</button>
+			</td>
+		</tr>
+		<tr valign="top">	
+			<td>
+				<h3>Code</h3>
+				<textarea id="code" class="disabled" rows="25" cols="60" readonly></textarea><br>
+			</td>
+			<td>
+				<h3>Canvas</h3>
+				<div id='sketch-container'>
+					<canvas id='sketch'></canvas>
 				</div>
-			
+			</td>
+		</tr>
+		<tr>
+			<td colspan = 2>
+				<h3>Errors</h3>
     			<textarea class="disabled" rows="10" cols="80" id="output" readonly>None.</textarea>
-                </div>
-			
-            
-	<script type="text/javascript" src="processing/processing.min.js"></script>
+			</td>
+		</tr>
+	</table>
+	<script type="text/javascript" src="processing-1.4.1.min.js"></script>
 	<script type="text/javascript" src="helper/jsbeautify.js"></script> 
 	<script type="text/javascript" src="helper/processing-helper.js"></script> 
 	<script type="text/javascript" >
