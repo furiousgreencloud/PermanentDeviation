@@ -36,8 +36,9 @@
   <p> <button id="continue" >Yes, I'll Code!</button>
 	  <button id="watch">No, can I just watch?</button></p>
   <p>&nbsp;</p>
-  <p>Learn more about this project, VIVO and the artists who made this <a href="http://www.vivomediaarts.com/permanent-deviation/" target="_blank"> <strong>here</strong>.</a></p>
+  <p>Learn more about this project and VIVO<a href="http://www.vivomediaarts.com/permanent-deviation/" target="_blank"> <strong>here</strong>.</a></p>
   <p>Hashtag: <strong>#vivopd</strong></p>
+  <p>Creation and ongoing development by: <a href="http://www.desiringproductions.com" target="_blank">Julie Gendron</a>, <a href="http://www.furiousgreencloud.com" target="_blank">Brady Marks</a> and <a href="http://danielmclaren.com" target="_blank">Niel McLaren</a>.
   <p>Please send feedback or bugs to <a href="mailto:info@permanentdeviation.com"><strong>info@permanentdeviation.com</strong></a></p>
 </div>
       
