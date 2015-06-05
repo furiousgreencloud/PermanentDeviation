@@ -93,7 +93,7 @@ $( document ).tooltip();
 <body onload='document.getElementById("code").focus();'>
 	
 	<!--<span>server state: <?php var_dump($state); ?><span><br><br>-->
-    <div id="header"><img src="images/header_bar.jpg" width="1024" height="59" alt="header graphic"><p class="logo"><a href="index.php" title="home">permanent deviation</a></p></div>
+    <div id="header"><img src="images/header_bar.jpg" alt="header graphic"><p class="logo"><a href="index.php" title="home">permanent deviation</a></p></div>
 <div id="wrapper"> 	
 <p class="labels"><span>Username: <input type="text" id="name" name="name" title="Add an Alias" onBlur="nameSet()"></span><br>
 	<span>Score: </span><span id="score" class="labelresults"></span> <img src="images/button_grey_info.png" width="14" height="18" alt="tips" title="Comments = 2 points (help teach others). Number = 1 point. Keyword = 2 points. Processing language = 1 point. Removing code = 0 points."> <br>

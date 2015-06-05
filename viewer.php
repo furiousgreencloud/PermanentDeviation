@@ -75,7 +75,7 @@
 </head>
 
 <body>
-<div id="header"><img src="images/header_bar.jpg" width="1024" height="59" alt="header graphic"><p class="logo"><a href="index.php" title="home">permanent deviation</a></p></div>
+<div id="header"><img src="images/header_bar.jpg" alt="header graphic"><p class="logo"><a href="index.php" title="home">permanent deviation</a></p></div>
 <div id="wrapper">
 <!--<h3>VIEWER</h3>-->
 	<p class="labels"><span>Coder is: <span id='name' class="labelresults">...</span><br>
